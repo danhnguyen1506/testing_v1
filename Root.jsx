@@ -13,7 +13,7 @@ class Root extends React.Component{
         let currentPath = window.location.pathname
         return(
             <div>
-                <div className="tag">
+                {/* <div className="tag">
                     <a href='/home'>Home</a> |
                     <a href='/about'>about</a> |
                     <a href="/changeView">ChangeView</a> |
@@ -21,9 +21,9 @@ class Root extends React.Component{
                     <a href='/order'>Order</a> |
                     <a href='/shoppingcart'>ShoppingCart</a> |
                     <a href='/YourCart'>YourCart</a>
-                </div>   
+                </div>    */}
 
-                    {currentPath.includes('/about')?
+                    {/* {currentPath.includes('/about')?
                     <About />:
                     currentPath.includes('/changeView')?
                     <ChangeView dispatch={this.props.dispatch} products={this.props.products} />:
@@ -34,7 +34,7 @@ class Root extends React.Component{
                     currentPath.includes('/shoppingcart')?
                     <ShoppingCart dispatch={this.props.dispatch} shoppingcart={this.props.shoppingcart} />:
                     currentPath.includes('/YourCart')?
-                    <YourCart dispatch={this.props.dispatch} products={this.props.products}/>:
+                    <YourCart dispatch={this.props.dispatch} products={this.props.products}/>: */}
                     <App dispatch={this.props.dispatch} products={this.props.products} />
 
                 }
